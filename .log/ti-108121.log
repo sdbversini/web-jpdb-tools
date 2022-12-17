@@ -1,0 +1,35 @@
+[15:50:23.618] Global cache location '/home/bv/.cache/typescript/4.7', safe file path '/home/bv/node_modules/typescript/lib/typingSafeList.json', types map path /home/bv/node_modules/typescript/lib/typesMap.json
+[15:50:23.619] Processing cache location '/home/bv/.cache/typescript/4.7'
+[15:50:23.619] Trying to find '/home/bv/.cache/typescript/4.7/package.json'...
+[15:50:23.621] Loaded content of '/home/bv/.cache/typescript/4.7/package.json': {"private":true,"dependencies":{"types-registry":"^0.1.605"}}
+[15:50:23.621] Loaded content of '/home/bv/.cache/typescript/4.7/package-lock.json'
+[15:50:23.621] Finished processing cache location '/home/bv/.cache/typescript/4.7'
+[15:50:23.621] Process id: 108128
+[15:50:23.621] NPM location: /usr/bin/npm (explicit '--npmLocation' not  provided)
+[15:50:23.621] validateDefaultNpmLocation: false
+[15:50:23.621] Npm config file: /home/bv/.cache/typescript/4.7/package.json
+[15:50:23.621] Updating types-registry npm package...
+[15:50:23.622] Exec: /usr/bin/npm install --ignore-scripts types-registry@latest
+[15:50:29.038]     Succeeded. stdout:
+    
+    changed 1 package, and audited 2 packages in 5s
+
+found 0 vulnerabilities
+
+[15:50:29.039] Updated types-registry npm package
+[15:50:29.109] Got install request {"projectName":"/dev/null/inferredProject1*","fileNames":["/home/bv/node_modules/typescript/lib/lib.es5.d.ts","/home/bv/node_modules/typescript/lib/lib.es2015.d.ts","/home/bv/node_modules/typescript/lib/lib.es2016.d.ts","/home/bv/node_modules/typescript/lib/lib.dom.d.ts","/home/bv/node_modules/typescript/lib/lib.dom.iterable.d.ts","/home/bv/node_modules/typescript/lib/lib.webworker.importscripts.d.ts","/home/bv/node_modules/typescript/lib/lib.scripthost.d.ts","/home/bv/node_modules/typescript/lib/lib.es2015.core.d.ts","/home/bv/node_modules/typescript/lib/lib.es2015.collection.d.ts","/home/bv/node_modules/typescript/lib/lib.es2015.generator.d.ts","/home/bv/node_modules/typescript/lib/lib.es2015.iterable.d.ts","/home/bv/node_modules/typescript/lib/lib.es2015.promise.d.ts","/home/bv/node_modules/typescript/lib/lib.es2015.proxy.d.ts","/home/bv/node_modules/typescript/lib/lib.es2015.reflect.d.ts","/home/bv/node_modules/typescript/lib/lib.es2015.symbol.d.ts","/home/bv/node_modules/typescript/lib/lib.es2015.symbol.wellknown.d.ts","/home/bv/node_modules/typescript/lib/lib.es2016.array.include.d.ts","/home/bv/node_modules/typescript/lib/lib.es2016.full.d.ts","/home/bv/prog/mokuro2jpdb/index.js"],"compilerOptions":{"module":1,"target":3,"jsx":1,"allowJs":true,"allowSyntheticDefaultImports":true,"allowNonTsExtensions":true,"noEmitForJsFiles":true,"maxNodeModuleJsDepth":2},"typeAcquisition":{"enable":true,"include":[],"exclude":[]},"unresolvedImports":[],"projectRootPath":"/home/bv/prog/mokuro2jpdb","kind":"discover"}
+[15:50:29.128] Loaded safelist from types map file '/home/bv/node_modules/typescript/lib/typesMap.json'
+[15:50:29.128] Explicitly included types: []
+[15:50:29.129] Inferred typings from unresolved imports: []
+[15:50:29.129] Result: {"cachedTypingPaths":[],"newTypingNames":[],"filesToWatch":["/home/bv/prog/mokuro2jpdb/bower_components","/home/bv/prog/mokuro2jpdb/node_modules"]}
+[15:50:29.129] Finished typings discovery: {"cachedTypingPaths":[],"newTypingNames":[],"filesToWatch":["/home/bv/prog/mokuro2jpdb/bower_components","/home/bv/prog/mokuro2jpdb/node_modules"]}
+[15:50:29.130] DirectoryWatcher:: Added:: WatchInfo: /home/bv/prog/mokuro2jpdb/bower_components
+[15:50:29.130] DirectoryWatcher:: Added:: WatchInfo: /home/bv/prog/mokuro2jpdb/bower_components 1 undefined Project: /dev/null/inferredProject1* watcher already invoked: false
+[15:50:29.132] Elapsed:: 1.6261829994618893ms DirectoryWatcher:: Added:: WatchInfo: /home/bv/prog/mokuro2jpdb/bower_components 1 undefined Project: /dev/null/inferredProject1* watcher already invoked: false
+[15:50:29.132] DirectoryWatcher:: Added:: WatchInfo: /home/bv/prog/mokuro2jpdb/node_modules
+[15:50:29.132] DirectoryWatcher:: Added:: WatchInfo: /home/bv/prog/mokuro2jpdb/node_modules 1 undefined Project: /dev/null/inferredProject1* watcher already invoked: false
+[15:50:29.132] Elapsed:: 0.08828799985349178ms DirectoryWatcher:: Added:: WatchInfo: /home/bv/prog/mokuro2jpdb/node_modules 1 undefined Project: /dev/null/inferredProject1* watcher already invoked: false
+[15:50:29.132] Sending response:
+    {"projectName":"/dev/null/inferredProject1*","typeAcquisition":{"enable":true,"include":[],"exclude":[]},"compilerOptions":{"module":1,"target":3,"jsx":1,"allowJs":true,"allowSyntheticDefaultImports":true,"allowNonTsExtensions":true,"noEmitForJsFiles":true,"maxNodeModuleJsDepth":2},"typings":[],"unresolvedImports":[],"kind":"action::set"}
+[15:50:29.132] Response has been sent.
+[15:50:29.132] No new typings were requested as a result of typings discovery
