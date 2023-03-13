@@ -98,7 +98,7 @@ const app = createApp({
         body: 'false',
       };
 
-      fetch('https:jpdb.io/api/v1/ping', options)
+      fetch('https://jpdb.io/api/v1/ping', options)
         // .then(response => response.json())
         .then(response => {
           if (response.ok) {
