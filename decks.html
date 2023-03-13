@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>JPDB Decks thingies</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://unpkg.com/vue@3/dist/vue.global.prod.js"></script>
+    <!-- <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script> -->
+</head>
+
+<body>
+    <div id="app">
+        <form v-if="!apiKeyOkay" @submit.prevent="verifyApiKey">
+            <label for="key">Enter your api key: (find at the bottom of <a href="https://jpdb.io/settings"> the settings
+                    page </a>)</label>
+            <input name="key" v-model="apiKey">
+            <button>Verify</button>
+        </form>
+        <div v-if="apiKeyOkay">
+            <!-- <div>Selected: {{ selected }}</div> -->
+
+            <!-- <button type="button" class="collapsible">Export Deck</button> -->
+            <div class="content" style="margin-bottom: 50px; margin-top: 10px;">
+                <h3>Export</h3>
+                <form @submit.prevent="exportDeck">
+                    <label>Select the deck to export: </label>
+                    <select v-model="selected">
+                        <option v-for="deck in decks" :value="deck[0]">{{deck[1]}} ({{deck[2]}} words)</option>
+                    </select>
+                    <button>Export</button>
+                </form>
+            </div>
+
+            <!-- <button type="button" class="collapsible">Export Deck</button> -->
+            <div class="content" style="margin-bottom: 50px;">
+                <h3>Import</h3>
+                <form @submit.prevent="importDeck">
+                    <label>Name of the deck after importing (can't be empty): </label>
+                    <input name="deck" v-model="deckImportName">
+                    <button>Import</button>
+                </form>
+            </div>
+
+            <!-- <button type="button" class="collapsible">Export Deck</button> -->
+            <div class="content" style="margin-bottom: 50px;">
+                <h3>Delete Decks</h3>
+                <form @submit.prevent="massDeleteDecks">
+                    <p>Select the decks to delete (use shift/control/dragging for multiple):</p>
+                    <select v-model="selectedToDelete" size=10 multiple>
+                        <option v-for="deck in userDecks" :value="deck[0]">{{deck[1]}} ({{deck[2]}} words)</option>
+                    </select>
+                    <br>
+                    <button>Delete</button>
+                </form>
+            </div>
+
+        </div>
+    </div>
+    <script src="decks.js"></script>
+</body>
+
+</html>
